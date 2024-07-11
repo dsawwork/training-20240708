@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="signup-container">
+        <header>
+            <h2>Sign Up</h2>
+        </header>
+
+        <div class="name-row">
+
+            <div id="first_name_wrapper"><input type="text" name="first_name" placeholder="First Name" required></div>
+            <div id="last_name_wrapper"><input type="text" name="last_name" placeholder="Last Name" required> </div>
+        </div>
+        
+        <div class="mobile-row"> <input type="tel" name="mobile_no" placeholder="Mobile No" required> </div>
+        <div class="email-row"><input type="email" name="email" placeholder="Email Address" required></div>
+        <div class="password-row">
+            <div id="first_name_wrapper">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div id="last_name_wrapperr">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+        </div>
+        <div class="details-row">
+            <div class="checkbox_wrapper">
+                <input type="checkbox" name="agree-chkbox" placeholder="Password" >  <label for="agree-chkbox" class="agree-checkbox">I Agree</label>
+            </div>
+            <div class="instructions_wrapper">
+                By clicking <span class="span-register"> register</span>, you agree to the <a class="link-nounderline" href="">Terms and conditions</a> set out by this site, including our Cookie Use.
+            </div>
+        </div>
+
+        <div class="button-grp">
+            <button type="button" class="btn-signin" name="sign_in">Sign In</button>
+        <button type="button" class="btn-register" name="register">Register</button>
+        
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
