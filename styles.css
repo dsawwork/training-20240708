@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-container header {
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+.signup-container > * {
+    width: 100%;
+}
+
+.signup-container .name-row,
+.signup-container .password-row,.signup-container .details-row, .signup-container .button-grp {
+    display: inline-flex;
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem; 
+    /* USING Flex gap */
+}
+
+.signup-container .name-row>*,
+.signup-container .password-row>* {
+    width: 48%;
+    
+    
+}
+
+
+
+
+.details-row > * {
+    width: 46%;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="tel"] {
+    width: 96%;
+    
+    padding: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-container .mobile-row input,  .signup-container .email-row input {
+    width: 98%;
+}
+
+input:focus {
+    --border-color: #58d3db;
+    border-color: var(--border-color);
+    /*outline: none;*/
+}
+
+.signup-container button {
+   
+    width: 48%;
+    padding: 1%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+}
+
+button.btn-register {
+    background-color: #28a745;
+}
+
+/* button.btn-register:hover {
+    background-color: #218838;
+} */
+button.btn-signin, .span-register {
+    color: white;
+    background-color: #3529da;
+    
+}
+.span-register {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
+/*  button.btn-register:hover {
+    background-color: #218838;
+}*/
+.checkbox_wrapper {
+    width: 30%;
+}
+.agree-checkbox {
+    font-weight: bold;
+}
+
+.instructions_wrapper {
+    width: 60%;
+}
+
+.link-nounderline {
+    text-decoration: none;
+    color: #8ba6ce;
+}
+
+
+
+
+
+
+
+/*  .signup-container button:hover {
+    background-color: #218838;
+}*/
