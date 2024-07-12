@@ -21,7 +21,7 @@
 
     `var a  =1 ` gets hoisted upwards and the value of `a` is the different in both log statements since `a` is redefined. TO fix this, use `let` or `const` to scope the variables to the block.
 
-    4. 
+4.  
     ```
     [1,2,3] // push 3 to arr array ref
     [1,2,3] // no change as foo2 sets a new array reference
