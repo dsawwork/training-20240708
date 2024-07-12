@@ -2,9 +2,23 @@
 
 # Answers
 1. Closures are useful because they provide a mechanism to encapsulate state for each function invocation. They can be used to simulate classes with private variables.
-2. `let` should be used when the variable will be updated, while `const` for variables that are fixed.
+   ```
+   function countFuncalls(method) {
+    var count = 0;
+    return {
+        callFunc: function(...args) {
+    method(...args);
+   ++count; },
+        get: function() { return count; },
+        resetCount: function() {
+   count = 0; }
+    }
+}
+   ```
+    above counts the time method is called
+3. `let` should be used when the variable will be updated, while `const` for variables that are fixed. Using both of them is good practice as it limits global variables that can pollute the namespace and makes code cleaner, debuggable and redable.
 
-3.  a common mistake is declaring variable again inside a if block using `var`and defining it. as in the next code:
+4.  a common mistake is declaring variable again inside a if block using `var`and defining it. as in the next code:
     ```  
     function foo() {
     var a = 3;
@@ -19,9 +33,8 @@
     foo();  
     ```
 
-    `var a  =1 ` gets hoisted upwards and the value of `a` is the different in both log statements since `a` is redefined. TO fix this, use `let` or `const` to scope the variables to the block.
-
-4.  
+    `var a  =1 ` gets hoisted upwards and the value of `a` is the different in both log statements since `a` is redefined. TO fix this, use `let` or `const` to scope the variables to the block and limit values to the scope.
+5.  
     ```
     [1,2,3] // push 3 to arr array ref
     [1,2,3] // no change as foo2 sets a new array reference
