@@ -13,9 +13,17 @@
         resetCount: function() {
    count = 0; }
     }
-}
+   }
+   function add(x) {
+   let b = 1;
+   console.log("val", b+x);
+   }
+   let obj = countFuncalls(add);
+   obj.callFunc(4);
+   console.log(obj.get());
+   
    ```
-    above counts the time method is called
+    above counts the time method is called while passing in the arguments to ca
 3. `let` should be used when the variable will be updated, while `const` for variables that are fixed. Using both of them is good practice as it limits global variables that can pollute the namespace and makes code cleaner, debuggable and redable.
 
 4.  a common mistake is declaring variable again inside a if block using `var`and defining it. as in the next code:
